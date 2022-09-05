@@ -10,7 +10,6 @@ def superheroes(names):
         for data in data_superheroes:
             if name == data['name']:
                 superhero_intellegence = data['powerstats']['intelligence']
-                # new_dict = {name: superhero_intellegence}
         new_dict[name] = superhero_intellegence
     cleverest_hero = max(new_dict, key=new_dict.get)
     print(f'Самый умный супергерой - {cleverest_hero}, его интеллект равен {new_dict[cleverest_hero]}')
